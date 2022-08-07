@@ -1,0 +1,387 @@
+/* Global */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+
+  font-family: 'Roboto','Arial',sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(51, 51, 51, 1);
+  background-color: #fff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-content {
+  flex-grow: 1;
+}
+
+
+/* CONTAINER */
+.container {
+  width: 100%;
+  max-width: 1040px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* BUTTON */
+.main-button {
+  display: inline-block;
+  padding: 12px 38px;
+  border: 0;
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: rgba(234, 98, 92, 1); 
+  transition: background-color 0.3s ease;
+}
+
+.main-button:hover {
+  background-color: #c22b23;
+}
+
+.main-button:active {
+  opacity: 0.6;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 90px;
+  border: 0;
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: rgba(234, 98, 92, 1); 
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #c22b23;
+}
+
+.button:active {
+  opacity: 0.6;
+}
+
+.button-footer {
+  display: inline-block;
+  padding: 12px 46px;
+  border: 0;
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: rgba(234, 98, 92, 1); 
+  transition: background-color 0.3s ease;
+}
+
+.button-footer:hover {
+  background-color: #c22b23;
+}
+
+.button-footer:active {
+  opacity: 0.6;
+}
+
+
+
+/* SITE-HEADER */
+/* SITE-HEADER-TOP */
+.site-header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.header-apple-icon {
+  width: 35px;
+  height: 42px;
+  margin-top: 0;
+  margin-left: 0;
+  object-fit: cover;
+  /* margin-top: 13px; */
+}
+
+.header-apple-icon:hover {
+  opacity: 0.8;
+}
+
+.header-apple-icon:active {
+  opacity: 0.6;
+}
+
+
+.site-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-header-list {
+  margin-top: 0;
+  align-items: center;
+  display: flex;
+}
+
+.site-header-item {
+  margin-left: 0;
+  list-style: none;
+}
+
+.site-header-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.site-header-link {
+  font-family: 'Roboto','Arial',sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  
+  color: #333333;  
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.site-header-link-help {
+  color: rgba(102, 102, 102, 1);
+}
+
+.site-header-link:hover {
+  color: #c22b23;
+  opacity: 0.8;
+}
+
+.site-header-link:active {
+  opacity: 0.6;
+}
+
+
+
+/* MAIN-CONTENT */
+/* HERO */  
+.hero {
+  border-bottom: 2px solid #ddd;
+  padding-top: 140px;
+  padding-bottom: 185px;
+
+  background-image: url(../img/intro-bg.jpg);
+  background-repeat: no-repeat;
+  /* background-position: right bottom; */
+  background-position: left calc(50% + 550px) bottom;
+}
+
+.hero-content {
+  width: 100%;
+  max-width: 490px;
+}
+
+.hero-heading {
+  margin-top: 0;
+  margin-bottom: 30px;
+  line-height: 1.2;
+  font-size: 50px;
+  color: #000;
+}
+
+.hero-text {
+  padding-left: 37px;
+  border-left: 3px solid #888;
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #777;
+}
+
+
+
+/* INFO */
+.info {
+  padding-top: 70px;
+  padding-bottom: 70px;
+
+}
+.info-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+}
+.info-list-item {
+  width: 280px;
+}
+
+.info-list-item:not(:last-child) {
+  margin-right: 80px;
+
+}
+
+.info-list-heading {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-family: 'Roboto','Arial',sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.info-list-text {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-family: 'Roboto','Arial',sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.info-divider {
+  width: 8px;
+  height: 8px;
+  bottom: 0;
+  margin: 0;
+  background-color: #ddd;
+  box-shadow: 16px 0 0 0 #ddd,
+      32px 0 0 0 #ddd;
+}
+
+.info-list-lined-link {
+  display: inline-flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: bold;
+  color: rgba(234, 98, 92, 1); 
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.info-list-lined-link::before {
+  width: 40px;
+  height: 3px;
+  margin-right: 10px;
+  background-color: rgba(234, 98, 92, 1);
+  content: "";
+  transition: width 0.3s ease;
+}
+
+.info-list-lined-link:hover::before {
+  width: 60px;
+}
+
+
+
+/* WATCH-BAND */
+.watch-band {
+  padding-top: 70px;
+  padding-bottom: 70px;
+
+  border: 1px solid rgb(181, 174, 174);
+}
+
+.watch-band-container {
+  display: flex;
+  align-items: center;
+}
+
+.watch-band-content {
+  width: 490px;
+  margin-top: 0;
+  margin-right: 110px;
+}
+.watch-band-heading {
+  font-family: 'Roboto','Arial',sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 60px;
+  color: #000000;
+
+}
+.watch-band-text {
+  padding-left: 37px;
+  border-left: 3px solid #888;
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #777;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.watch-band-img {
+  width: 400px;
+  height: 600px;
+  object-fit: cover;
+}
+
+
+/* SITE-FOOTER */
+.site-footer {
+  padding-top: 240px;
+  padding-bottom: 240px;
+  background-image: url("../img/runners.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  background-attachment: fixed;
+  background-size: cover;
+
+  
+}
+
+.site-footer-content {
+  float: right;
+  width: 490px;
+}
+.site-footer-heading {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 60px;
+  color: #FFFFFF;
+}
+
+.site-footer-text {
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding-left: 37px;
+  border-left: 3px solid #888;
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #777;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
